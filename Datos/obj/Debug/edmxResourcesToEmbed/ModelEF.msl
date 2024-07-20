@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelEFStoreContainer" CdmEntityContainer="BDEFEntities">
+    <EntitySetMapping Name="Mesa_Reserva">
+      <EntityTypeMapping TypeName="ModelEF.Mesa_Reserva">
+        <MappingFragment StoreEntitySet="Mesa_Reserva">
+          <ScalarProperty Name="ID_Mesa_Admin" ColumnName="ID_Mesa_Admin" />
+          <ScalarProperty Name="FechayHora_Reserva" ColumnName="FechayHora_Reserva" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Reserva_Admin_ID_Reserva_Ad" ColumnName="Reserva_Admin_ID_Reserva_Ad" />
+          <ScalarProperty Name="Mesas_Inventario_ID_Plato" ColumnName="Mesas_Inventario_ID_Plato" />
+          <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mesas_Inventario">
+      <EntityTypeMapping TypeName="ModelEF.Mesas_Inventario">
+        <MappingFragment StoreEntitySet="Mesas_Inventario">
+          <ScalarProperty Name="ID_Mesa" ColumnName="ID_Mesa" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plato_Reserva">
+      <EntityTypeMapping TypeName="ModelEF.Plato_Reserva">
+        <MappingFragment StoreEntitySet="Plato_Reserva">
+          <ScalarProperty Name="ID_Plato_Admin" ColumnName="ID_Plato_Admin" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="Reserva_Admin_ID_Reserva_Admin" ColumnName="Reserva_Admin_ID_Reserva_Admin" />
+          <ScalarProperty Name="Platos_Inventario_ID_Plato" ColumnName="Platos_Inventario_ID_Plato" />
+          <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Platos_Inventario">
+      <EntityTypeMapping TypeName="ModelEF.Platos_Inventario">
+        <MappingFragment StoreEntitySet="Platos_Inventario">
+          <ScalarProperty Name="ID_Plato" ColumnName="ID_Plato" />
+          <ScalarProperty Name="Nombre_Plato" ColumnName="Nombre_Plato" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reserva">
+      <EntityTypeMapping TypeName="ModelEF.Reserva">
+        <MappingFragment StoreEntitySet="Reserva">
+          <ScalarProperty Name="ID_Reserva" ColumnName="ID_Reserva" />
+          <ScalarProperty Name="Nombre_Cliente" ColumnName="Nombre_Cliente" />
+          <ScalarProperty Name="Numero_Personas" ColumnName="Numero_Personas" />
+          <ScalarProperty Name="FechayHora_Reserva" ColumnName="FechayHora_Reserva" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="ModelEF.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+          <ScalarProperty Name="Nombre_Usuario" ColumnName="Nombre_Usuario" />
+          <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

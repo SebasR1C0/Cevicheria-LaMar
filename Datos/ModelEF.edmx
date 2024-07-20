@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ModelEF.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Mesa_Reserva">
+          <Key>
+            <PropertyRef Name="ID_Mesa_Admin" />
+          </Key>
+          <Property Name="ID_Mesa_Admin" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FechayHora_Reserva" Type="datetime" />
+          <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+          <Property Name="UsuarioCreacion" Type="varchar" MaxLength="50" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaCreacion" Type="datetime" />
+          <Property Name="Reserva_Admin_ID_Reserva_Ad" Type="int" />
+          <Property Name="Mesas_Inventario_ID_Plato" Type="int" />
+          <Property Name="Eliminado" Type="bit" />
+        </EntityType>
+        <EntityType Name="Mesas_Inventario">
+          <Key>
+            <PropertyRef Name="ID_Mesa" />
+          </Key>
+          <Property Name="ID_Mesa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="varchar" MaxLength="20" />
+          <Property Name="Capacidad" Type="int" />
+          <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+          <Property Name="UsuarioCreacion" Type="varchar" MaxLength="50" />
+          <Property Name="FechaCreacion" Type="datetime" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="Estado" Type="varchar" MaxLength="20" />
+          <Property Name="Eliminado" Type="bit" />
+        </EntityType>
+        <EntityType Name="Plato_Reserva">
+          <Key>
+            <PropertyRef Name="ID_Plato_Admin" />
+          </Key>
+          <Property Name="ID_Plato_Admin" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+          <Property Name="UsuarioCreacion" Type="varchar" MaxLength="50" />
+          <Property Name="FechaCreacion" Type="datetime" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="Reserva_Admin_ID_Reserva_Admin" Type="int" />
+          <Property Name="Platos_Inventario_ID_Plato" Type="int" />
+          <Property Name="Eliminado" Type="bit" />
+        </EntityType>
+        <EntityType Name="Platos_Inventario">
+          <Key>
+            <PropertyRef Name="ID_Plato" />
+          </Key>
+          <Property Name="ID_Plato" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre_Plato" Type="varchar" MaxLength="50" />
+          <Property Name="Precio" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Categoria" Type="varchar" MaxLength="30" />
+          <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+          <Property Name="UsuarioCreacion" Type="varchar" MaxLength="50" />
+          <Property Name="FechaCreacion" Type="datetime" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="Eliminado" Type="bit" />
+        </EntityType>
+        <EntityType Name="Reserva">
+          <Key>
+            <PropertyRef Name="ID_Reserva" />
+          </Key>
+          <Property Name="ID_Reserva" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre_Cliente" Type="varchar" MaxLength="50" />
+          <Property Name="Numero_Personas" Type="int" />
+          <Property Name="FechayHora_Reserva" Type="datetime" />
+          <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaCreacion" Type="datetime" />
+          <Property Name="UsuarioCreacion" Type="varchar" MaxLength="50" />
+          <Property Name="Estado" Type="varchar" MaxLength="20" />
+          <Property Name="Eliminado" Type="bit" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="UsuarioId" />
+          </Key>
+          <Property Name="UsuarioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre_Usuario" Type="varchar" MaxLength="50" />
+          <Property Name="Contrasena" Type="varchar" MaxLength="50" />
+          <Property Name="Rol" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Mesa_Reserva_Mesas_Inventario">
+          <End Role="Mesas_Inventario" Type="Self.Mesas_Inventario" Multiplicity="0..1" />
+          <End Role="Mesa_Reserva" Type="Self.Mesa_Reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mesas_Inventario">
+              <PropertyRef Name="ID_Mesa" />
+            </Principal>
+            <Dependent Role="Mesa_Reserva">
+              <PropertyRef Name="Mesas_Inventario_ID_Plato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Mesa_Reserva_Reserva">
+          <End Role="Reserva" Type="Self.Reserva" Multiplicity="0..1" />
+          <End Role="Mesa_Reserva" Type="Self.Mesa_Reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reserva">
+              <PropertyRef Name="ID_Reserva" />
+            </Principal>
+            <Dependent Role="Mesa_Reserva">
+              <PropertyRef Name="Reserva_Admin_ID_Reserva_Ad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Plato_Reserva_Platos_Inventario">
+          <End Role="Platos_Inventario" Type="Self.Platos_Inventario" Multiplicity="0..1" />
+          <End Role="Plato_Reserva" Type="Self.Plato_Reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Platos_Inventario">
+              <PropertyRef Name="ID_Plato" />
+            </Principal>
+            <Dependent Role="Plato_Reserva">
+              <PropertyRef Name="Platos_Inventario_ID_Plato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Plato_Reserva_Reserva">
+          <End Role="Reserva" Type="Self.Reserva" Multiplicity="0..1" />
+          <End Role="Plato_Reserva" Type="Self.Plato_Reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reserva">
+              <PropertyRef Name="ID_Reserva" />
+            </Principal>
+            <Dependent Role="Plato_Reserva">
+              <PropertyRef Name="Reserva_Admin_ID_Reserva_Admin" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModelEFStoreContainer">
+          <EntitySet Name="Mesa_Reserva" EntityType="Self.Mesa_Reserva" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Mesas_Inventario" EntityType="Self.Mesas_Inventario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Plato_Reserva" EntityType="Self.Plato_Reserva" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Platos_Inventario" EntityType="Self.Platos_Inventario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Reserva" EntityType="Self.Reserva" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Mesa_Reserva_Mesas_Inventario" Association="Self.FK_Mesa_Reserva_Mesas_Inventario">
+            <End Role="Mesas_Inventario" EntitySet="Mesas_Inventario" />
+            <End Role="Mesa_Reserva" EntitySet="Mesa_Reserva" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Mesa_Reserva_Reserva" Association="Self.FK_Mesa_Reserva_Reserva">
+            <End Role="Reserva" EntitySet="Reserva" />
+            <End Role="Mesa_Reserva" EntitySet="Mesa_Reserva" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Plato_Reserva_Platos_Inventario" Association="Self.FK_Plato_Reserva_Platos_Inventario">
+            <End Role="Platos_Inventario" EntitySet="Platos_Inventario" />
+            <End Role="Plato_Reserva" EntitySet="Plato_Reserva" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Plato_Reserva_Reserva" Association="Self.FK_Plato_Reserva_Reserva">
+            <End Role="Reserva" EntitySet="Reserva" />
+            <End Role="Plato_Reserva" EntitySet="Plato_Reserva" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ModelEF" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Mesa_Reserva">
+          <Key>
+            <PropertyRef Name="ID_Mesa_Admin" />
+          </Key>
+          <Property Name="ID_Mesa_Admin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FechayHora_Reserva" Type="DateTime" Precision="3" />
+          <Property Name="UsuarioModificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UsuarioCreacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+          <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+          <Property Name="Reserva_Admin_ID_Reserva_Ad" Type="Int32" />
+          <Property Name="Mesas_Inventario_ID_Plato" Type="Int32" />
+          <Property Name="Eliminado" Type="Boolean" />
+          <NavigationProperty Name="Mesas_Inventario" Relationship="Self.FK_Mesa_Reserva_Mesas_Inventario" FromRole="Mesa_Reserva" ToRole="Mesas_Inventario" />
+          <NavigationProperty Name="Reserva" Relationship="Self.FK_Mesa_Reserva_Reserva" FromRole="Mesa_Reserva" ToRole="Reserva" />
+        </EntityType>
+        <EntityType Name="Mesas_Inventario">
+          <Key>
+            <PropertyRef Name="ID_Mesa" />
+          </Key>
+          <Property Name="ID_Mesa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Capacidad" Type="Int32" />
+          <Property Name="UsuarioModificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UsuarioCreacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+          <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+          <Property Name="Estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Eliminado" Type="Boolean" />
+          <NavigationProperty Name="Mesa_Reserva" Relationship="Self.FK_Mesa_Reserva_Mesas_Inventario" FromRole="Mesas_Inventario" ToRole="Mesa_Reserva" />
+        </EntityType>
+        <EntityType Name="Plato_Reserva">
+          <Key>
+            <PropertyRef Name="ID_Plato_Admin" />
+          </Key>
+          <Property Name="ID_Plato_Admin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UsuarioModificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UsuarioCreacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+          <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+          <Property Name="Reserva_Admin_ID_Reserva_Admin" Type="Int32" />
+          <Property Name="Platos_Inventario_ID_Plato" Type="Int32" />
+          <Property Name="Eliminado" Type="Boolean" />
+          <NavigationProperty Name="Platos_Inventario" Relationship="Self.FK_Plato_Reserva_Platos_Inventario" FromRole="Plato_Reserva" ToRole="Platos_Inventario" />
+          <NavigationProperty Name="Reserva" Relationship="Self.FK_Plato_Reserva_Reserva" FromRole="Plato_Reserva" ToRole="Reserva" />
+        </EntityType>
+        <EntityType Name="Platos_Inventario">
+          <Key>
+            <PropertyRef Name="ID_Plato" />
+          </Key>
+          <Property Name="ID_Plato" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Plato" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Precio" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="Categoria" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="UsuarioModificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UsuarioCreacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+          <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+          <Property Name="Eliminado" Type="Boolean" />
+          <NavigationProperty Name="Plato_Reserva" Relationship="Self.FK_Plato_Reserva_Platos_Inventario" FromRole="Platos_Inventario" ToRole="Plato_Reserva" />
+        </EntityType>
+        <EntityType Name="Reserva">
+          <Key>
+            <PropertyRef Name="ID_Reserva" />
+          </Key>
+          <Property Name="ID_Reserva" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Cliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Numero_Personas" Type="Int32" />
+          <Property Name="FechayHora_Reserva" Type="DateTime" Precision="3" />
+          <Property Name="UsuarioModificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+          <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+          <Property Name="UsuarioCreacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Eliminado" Type="Boolean" />
+          <NavigationProperty Name="Mesa_Reserva" Relationship="Self.FK_Mesa_Reserva_Reserva" FromRole="Reserva" ToRole="Mesa_Reserva" />
+          <NavigationProperty Name="Plato_Reserva" Relationship="Self.FK_Plato_Reserva_Reserva" FromRole="Reserva" ToRole="Plato_Reserva" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="UsuarioId" />
+          </Key>
+          <Property Name="UsuarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Contrasena" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_Mesa_Reserva_Mesas_Inventario">
+          <End Role="Mesas_Inventario" Type="Self.Mesas_Inventario" Multiplicity="0..1" />
+          <End Role="Mesa_Reserva" Type="Self.Mesa_Reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mesas_Inventario">
+              <PropertyRef Name="ID_Mesa" />
+            </Principal>
+            <Dependent Role="Mesa_Reserva">
+              <PropertyRef Name="Mesas_Inventario_ID_Plato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Mesa_Reserva_Reserva">
+          <End Role="Reserva" Type="Self.Reserva" Multiplicity="0..1" />
+          <End Role="Mesa_Reserva" Type="Self.Mesa_Reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reserva">
+              <PropertyRef Name="ID_Reserva" />
+            </Principal>
+            <Dependent Role="Mesa_Reserva">
+              <PropertyRef Name="Reserva_Admin_ID_Reserva_Ad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Plato_Reserva_Platos_Inventario">
+          <End Role="Platos_Inventario" Type="Self.Platos_Inventario" Multiplicity="0..1" />
+          <End Role="Plato_Reserva" Type="Self.Plato_Reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Platos_Inventario">
+              <PropertyRef Name="ID_Plato" />
+            </Principal>
+            <Dependent Role="Plato_Reserva">
+              <PropertyRef Name="Platos_Inventario_ID_Plato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Plato_Reserva_Reserva">
+          <End Role="Reserva" Type="Self.Reserva" Multiplicity="0..1" />
+          <End Role="Plato_Reserva" Type="Self.Plato_Reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reserva">
+              <PropertyRef Name="ID_Reserva" />
+            </Principal>
+            <Dependent Role="Plato_Reserva">
+              <PropertyRef Name="Reserva_Admin_ID_Reserva_Admin" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BDEFEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Mesa_Reserva" EntityType="Self.Mesa_Reserva" />
+          <EntitySet Name="Mesas_Inventario" EntityType="Self.Mesas_Inventario" />
+          <EntitySet Name="Plato_Reserva" EntityType="Self.Plato_Reserva" />
+          <EntitySet Name="Platos_Inventario" EntityType="Self.Platos_Inventario" />
+          <EntitySet Name="Reserva" EntityType="Self.Reserva" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+          <AssociationSet Name="FK_Mesa_Reserva_Mesas_Inventario" Association="Self.FK_Mesa_Reserva_Mesas_Inventario">
+            <End Role="Mesas_Inventario" EntitySet="Mesas_Inventario" />
+            <End Role="Mesa_Reserva" EntitySet="Mesa_Reserva" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Mesa_Reserva_Reserva" Association="Self.FK_Mesa_Reserva_Reserva">
+            <End Role="Reserva" EntitySet="Reserva" />
+            <End Role="Mesa_Reserva" EntitySet="Mesa_Reserva" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Plato_Reserva_Platos_Inventario" Association="Self.FK_Plato_Reserva_Platos_Inventario">
+            <End Role="Platos_Inventario" EntitySet="Platos_Inventario" />
+            <End Role="Plato_Reserva" EntitySet="Plato_Reserva" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Plato_Reserva_Reserva" Association="Self.FK_Plato_Reserva_Reserva">
+            <End Role="Reserva" EntitySet="Reserva" />
+            <End Role="Plato_Reserva" EntitySet="Plato_Reserva" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelEFStoreContainer" CdmEntityContainer="BDEFEntities">
+          <EntitySetMapping Name="Mesa_Reserva">
+            <EntityTypeMapping TypeName="ModelEF.Mesa_Reserva">
+              <MappingFragment StoreEntitySet="Mesa_Reserva">
+                <ScalarProperty Name="ID_Mesa_Admin" ColumnName="ID_Mesa_Admin" />
+                <ScalarProperty Name="FechayHora_Reserva" ColumnName="FechayHora_Reserva" />
+                <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+                <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="Reserva_Admin_ID_Reserva_Ad" ColumnName="Reserva_Admin_ID_Reserva_Ad" />
+                <ScalarProperty Name="Mesas_Inventario_ID_Plato" ColumnName="Mesas_Inventario_ID_Plato" />
+                <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Mesas_Inventario">
+            <EntityTypeMapping TypeName="ModelEF.Mesas_Inventario">
+              <MappingFragment StoreEntitySet="Mesas_Inventario">
+                <ScalarProperty Name="ID_Mesa" ColumnName="ID_Mesa" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+                <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
+                <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+                <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Plato_Reserva">
+            <EntityTypeMapping TypeName="ModelEF.Plato_Reserva">
+              <MappingFragment StoreEntitySet="Plato_Reserva">
+                <ScalarProperty Name="ID_Plato_Admin" ColumnName="ID_Plato_Admin" />
+                <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+                <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="Reserva_Admin_ID_Reserva_Admin" ColumnName="Reserva_Admin_ID_Reserva_Admin" />
+                <ScalarProperty Name="Platos_Inventario_ID_Plato" ColumnName="Platos_Inventario_ID_Plato" />
+                <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Platos_Inventario">
+            <EntityTypeMapping TypeName="ModelEF.Platos_Inventario">
+              <MappingFragment StoreEntitySet="Platos_Inventario">
+                <ScalarProperty Name="ID_Plato" ColumnName="ID_Plato" />
+                <ScalarProperty Name="Nombre_Plato" ColumnName="Nombre_Plato" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+                <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+                <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+                <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reserva">
+            <EntityTypeMapping TypeName="ModelEF.Reserva">
+              <MappingFragment StoreEntitySet="Reserva">
+                <ScalarProperty Name="ID_Reserva" ColumnName="ID_Reserva" />
+                <ScalarProperty Name="Nombre_Cliente" ColumnName="Nombre_Cliente" />
+                <ScalarProperty Name="Numero_Personas" ColumnName="Numero_Personas" />
+                <ScalarProperty Name="FechayHora_Reserva" ColumnName="FechayHora_Reserva" />
+                <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario">
+            <EntityTypeMapping TypeName="ModelEF.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+                <ScalarProperty Name="Nombre_Usuario" ColumnName="Nombre_Usuario" />
+                <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

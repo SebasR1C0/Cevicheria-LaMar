@@ -1,0 +1,84 @@
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Datos.dll
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Negocio.dll
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Datos.pdb
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Datos.dll.config
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormAdmin.resources
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormLogin.resources
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormMesasAdmin.resources
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormMesasEmpleado.resources
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormPlatosAdmin.resources
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormPlatosEmpleado.resources
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormReportes.resources
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormReservaAdmin.resources
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormReservaEmpleado.resources
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Datos.dll
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Negocio.dll
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Datos.pdb
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Datos.dll.config
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormAdmin.resources
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormLogin.resources
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormMesasAdmin.resources
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormMesasEmpleado.resources
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormPlatosAdmin.resources
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormPlatosEmpleado.resources
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormReportes.resources
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormReservaAdmin.resources
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormReservaEmpleado.resources
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presenta.BC77CD05.Up2Date
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Datos.dll
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Negocio.dll
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Datos.pdb
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Datos.dll.config
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormAdmin.resources
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormLogin.resources
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormMesasAdmin.resources
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormMesasEmpleado.resources
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormPlatosAdmin.resources
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormPlatosEmpleado.resources
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormReportes.resources
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormReservaAdmin.resources
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.FormReservaEmpleado.resources
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presenta.BC77CD05.Up2Date
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Presentacion\obj\Debug\Presentacion.pdb

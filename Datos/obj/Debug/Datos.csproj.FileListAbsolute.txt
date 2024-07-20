@@ -1,0 +1,36 @@
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\Datos.dll.config
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\Datos.dll
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\Datos.pdb
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.dll
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.xml
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.dll
+C:\Users\FERNANDO\source\repos\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.pdb
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\Datos.dll.config
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\Datos.dll
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\Datos.pdb
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.dll
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.xml
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.dll
+C:\Users\ROJAS\Desktop\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.pdb
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\Datos.dll.config
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\Datos.dll
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\Datos.pdb
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.dll
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.xml
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.dll
+C:\Users\LENOVO\Downloads\Nueva carpeta\Cevicheria LaMar- Trabajo Final2\Cevicheria LaMar- Trabajo Final\Datos\obj\Debug\Datos.pdb

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="374442ed34df4441ba5e8cda7b4702cb" Name="Diagram1" ZoomLevel="73">
+        <EntityTypeShape EntityType="ModelEF.Mesa_Reserva" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelEF.Mesas_Inventario" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelEF.Plato_Reserva" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelEF.Platos_Inventario" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelEF.Reserva" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelEF.Usuario" Width="1.5" PointX="8" PointY="1.875" IsExpanded="true" />
+        <AssociationConnector Association="ModelEF.FK_Mesa_Reserva_Mesas_Inventario" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelEF.FK_Mesa_Reserva_Reserva" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelEF.FK_Plato_Reserva_Platos_Inventario" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelEF.FK_Plato_Reserva_Reserva" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
